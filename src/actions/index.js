@@ -2,8 +2,8 @@ import axios from 'axios'
 
 export const READ_EVENTS = 'READ_EVENTS'
 
-const ROOT_URL = 'https://udemy-utils.herokuapp.com/api/v1'
-const QUERYSTRING = '?token=token123'
+const ROOT_URL = 'https://api.twitter.com/1.1/search/tweets.json'
+const QUERYSTRING = ''
 
 export const readEvents = () => async dispatch => {
   const response = await axios.get(`${ROOT_URL}/events${QUERYSTRING}`)
